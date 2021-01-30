@@ -1,0 +1,107 @@
+import axios from 'axios'
+import React, {useState, useEffect} from 'react'
+import {Grid, Col} from '../../components/Grid'
+import Inner from '../../components/Inner'
+import Title from '../../components/Title'
+import Video from '../../components/Video'
+import NavMenu from '../../components/NavMenu'
+import Section from '../../components/Section'
+import Services from '../../components/Services'
+import AboutCard from '../../components/AboutCard'
+import Multimedia from '../../components/Multimedia'
+import Masonry from 'react-masonry-css'
+import Hero from '../../components/Hero'
+import Streamings from '../../components/Streamings'
+import ParticlesBackground from '../../components/ParticlesBackground'
+import Footer from '../../components/Footer'
+
+const Home = () =>{
+
+    const [videos, setVideos] = useState([])
+    const [images, setImages] = useState([])
+    const [streamings, setStreamings] = useState([])
+
+    useEffect(() => {
+        const fetchData = async () => {
+              try {
+                  const responseVideos = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/videos`)
+                  const responseImages = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/imagenes`)
+                  const responseStreamings = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/streamings`)
+                  setVideos(responseVideos.data);
+                  setImages(responseImages.data);
+                  setStreamings(responseStreamings.data)
+              } catch (error) {
+                  console.error('este es mi error',error);
+              }
+        }
+        fetchData()
+    }, [])
+
+    /*
+
+    <Inner>
+                <NavMenu />   
+                <Hero />           
+                <AboutCard />
+                <Services />
+            </Inner>
+                <Section />
+            <Inner>
+                <Grid colGap={60} rowGap={50}>
+                    {videos && videos.map((video) => (<Video key={video.id} data={video} />))}
+                </Grid>
+                <Title size="h3">Producción y dirección de streamings</Title>
+                <Masonry
+                    breakpointCols={3}
+                    className="my-masonry-grid-streamings"
+                    columnClassName="my-masonry-grid-streamings_column">
+                    {streamings && streamings.map((streaming) => (<Streamings key={streaming.id} data={streaming} />))}
+                </Masonry>
+                <Title size="h1" id="multimedia_section">Contenido Multimedia</Title>
+                <Masonry
+                    breakpointCols={4}
+                    className="my-masonry-grid"
+                    columnClassName="my-masonry-grid_column">
+                    {images && images.map((image) => (<Multimedia key={image.id} data={image} />))}
+                </Masonry>
+            </Inner>
+                <Footer />
+
+    */
+
+    return(
+        <div>
+            
+            <Inner>
+                <NavMenu />   
+                <Hero />           
+                <AboutCard />
+                <Services />
+            </Inner>
+                <Section />
+            <Inner>
+                <Grid colGap={60} rowGap={50}>
+                    {videos && videos.map((video) => (<Video key={video.id} data={video} />))}
+                </Grid>
+                <Title size="h3">Producción y dirección de streamings</Title>
+                <Masonry
+                    breakpointCols={3}
+                    className="my-masonry-grid-streamings"
+                    columnClassName="my-masonry-grid-streamings_column">
+                    {streamings && streamings.map((streaming) => (<Streamings key={streaming.id} data={streaming} />))}
+                </Masonry>
+                <Title size="h1" id="multimedia_section">Contenido Multimedia</Title>
+                <Masonry
+                    breakpointCols={4}
+                    className="my-masonry-grid"
+                    columnClassName="my-masonry-grid_column">
+                    {images && images.map((image) => (<Multimedia key={image.id} data={image} />))}
+                </Masonry>
+            </Inner>
+                <Footer />
+            
+        </div>
+    )
+}
+
+export default Home
