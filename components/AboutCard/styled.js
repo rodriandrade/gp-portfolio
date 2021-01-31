@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 const ImageAbout = styled.img`
     width:400px;
+
+    @media (max-width: 480px) {
+        margin:0 auto;
+    }
 `
 
 const ContainerHero = styled.div`
@@ -9,8 +13,14 @@ const ContainerHero = styled.div`
     flex-direction:column;
     justify-content: center;
     //background-color: rgb(240,240,240);
-    margin:80px 0;
+    margin:60px 0;
     align-items: flex-start;
+    
+    @media (max-width: 480px) {
+        width:100%;
+        text-align:center;
+        align-items: center;
+    }
 `
 
 const ContainerText = styled.div`
@@ -20,7 +30,27 @@ const ContainerText = styled.div`
     justify-content: flex-start;
     width:650px;
     margin-left:30px;
+
+    @media (max-width: 480px) {
+        width:100%;
+        text-align:center;
+        justify-content:center;
+        align-items: center;
+        margin-left:0;
+
+        a{
+            margin:0 auto;
+        }
+    }
     
+`
+
+const ImageContainer = styled.div`
+
+    @media (max-width: 480px) {
+        margin:0 auto;
+    }
+
 `
 
 const ContainerJobs = styled.div`
@@ -30,12 +60,26 @@ const ContainerJobs = styled.div`
     div:nth-child(2) {
         margin-left:20px;
     }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        //margin:0 auto;
+
+        div:nth-child(2) {
+            margin-left:0px;
+        }
+    }
 `
 
 const Text = styled.p`
     font-size: 16px;
     color: rgb(50,50,50);
     margin:0;
+
+    @media (max-width: 480px) {
+        width:97%;
+        margin:20px 0;
+    }
 `
 
 const TitleAbout = styled.h2`
@@ -48,6 +92,10 @@ const SubtitleAbout = styled.h2`
     font-size: 16px;
     color: rgb(50,50,50);
     margin-bottom:10px;
+
+    @media (max-width: 480px) {
+       text-align:center !important;
+    }
 `
 
 const Button = styled.button`
@@ -62,6 +110,10 @@ const Button = styled.button`
     border-radius:5px;
     cursor: pointer;
     margin-top:15px;
+
+    @media (max-width: 480px) {
+        margin:15px auto;
+    }
 `
 
 const ContainerCommunication = styled.div`
@@ -74,4 +126,4 @@ const ContainerCommunication = styled.div`
 `
 
 
-export { ImageAbout, ContainerText, Text, Button, ContainerHero, ContainerJobs, TitleAbout, SubtitleAbout,ContainerCommunication}
+export { ImageAbout, ContainerText, Text, Button, ContainerHero, ContainerJobs, TitleAbout, SubtitleAbout,ContainerCommunication, ImageContainer}

@@ -66,9 +66,40 @@ a{
 * {
   box-sizing: border-box;
 }
-@media (max-width: 860px) {
-    .inner {padding:0 30px;}
+
+@media (max-width: 480px) {
+
+  // CONTENIDO MULTIMEDIA //
+
+  .my-masonry-grid {
+    width: 82%;
+    margin:0 auto;
+  }
+  .my-masonry-grid_column {
+    width:82%;
+    margin:0 auto;
+    padding-left:0;
+  }
+  .my-masonry-grid_column > div {
+    width:100%;
+  }
+
+  // PRODUCCIÓN Y DIRECCIÓN DE STREAMING //
+
+  .my-masonry-grid-streamings {
+    width: 82%;
+    margin:0 auto;
+  }
+
+  .my-masonry-grid-streamings_column {
+    width:82%;
+    margin:0 auto;
+    padding-left:0;
+  }
+  .my-masonry-grid-streamings_column > div {
+    width:100%;
+  }
 }
- 
+
 `; 
 export default GlobalStyle;

@@ -11,17 +11,23 @@ const GridContainer = styled.div`
     justify-content: center;
     align-content: center;
     ${(props) => (props.justifyItems  ? "left" : "center")};
+    //background-color:red;
 
     @media (max-width: 768px) {
         width:768px;
     }
     @media (max-width: 480px) {
-        width:480px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        width:90%;
+        margin:0 auto;
     }
 `
 
 const ColContainer = styled.div`
+    //background-color:yellow;
     grid-column: span ${props => props.desktop || 12};
+    
     @media (max-width: 768px) {
         grid-column: span ${props => props.tablet || '12'};
     }

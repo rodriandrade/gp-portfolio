@@ -8,6 +8,10 @@ const Container = styled.div`
     padding:10px;
     width: 320px;
     border:1px solid rgb(240, 240, 240);
+
+    @media (max-width: 480px) {
+        margin:16px auto;
+    }
 `
 
 const IconContainer = styled.div`

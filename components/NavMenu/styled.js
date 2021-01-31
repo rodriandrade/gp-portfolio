@@ -7,6 +7,10 @@ const Container = styled.div`
     align-items: center;
     border-bottom: 1px solid rgb(240, 240, 240);
     z-index:2;
+
+    @media (max-width: 480px) {
+        width:100%;
+    }
 `
 const List = styled.li`
     display: inline-block;

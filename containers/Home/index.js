@@ -37,6 +37,13 @@ const Home = () =>{
         fetchData()
     }, [])
 
+    const breakpointColumnsObj = {
+        default: 4,
+        1100: 3,
+        700: 2,
+        490: 1
+      };
+
     /*
 
     <Inner>
@@ -70,37 +77,33 @@ const Home = () =>{
     */
 
     return(
-        <div>
-            
+        <>
             <Inner>
-                <NavMenu />   
-                <Hero />           
-                <AboutCard />
-                <Services />
-            </Inner>
-                <Section />
-            <Inner>
+                <NavMenu />  
+                <Hero /> 
+                <AboutCard />  
+                <Services /> 
+                <Section /> 
                 <Grid colGap={60} rowGap={50}>
                     {videos && videos.map((video) => (<Video key={video.id} data={video} />))}
                 </Grid>
                 <Title size="h3">Producción y dirección de streamings</Title>
                 <Masonry
-                    breakpointCols={3}
+                    breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid-streamings"
                     columnClassName="my-masonry-grid-streamings_column">
                     {streamings && streamings.map((streaming) => (<Streamings key={streaming.id} data={streaming} />))}
                 </Masonry>
                 <Title size="h1" id="multimedia_section">Contenido Multimedia</Title>
                 <Masonry
-                    breakpointCols={4}
+                    breakpointCols={breakpointColumnsObj}
                     className="my-masonry-grid"
                     columnClassName="my-masonry-grid_column">
                     {images && images.map((image) => (<Multimedia key={image.id} data={image} />))}
                 </Masonry>
             </Inner>
-                <Footer />
-            
-        </div>
+               <Footer />
+        </>
     )
 }
 

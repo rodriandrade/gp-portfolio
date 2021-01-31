@@ -4,8 +4,9 @@ const Title = ({children, ...props}) =>{
     const {size, id, align} = props;
     return(
         <>
-            <TitleText size={size} id={id} align={align}>{children}</TitleText>
-        <img src=""/>
+            <TitleText size={size} id={id} align={align}>
+                {children}
+            </TitleText>
         </>
     )
 }

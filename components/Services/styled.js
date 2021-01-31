@@ -29,6 +29,7 @@ const ContentContainer = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    margin-bottom:20px;
 
     :hover{
         border-bottom: 5px solid #405CB8;

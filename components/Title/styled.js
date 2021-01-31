@@ -28,15 +28,20 @@ const TitleText = styled.h1`
       height:6px;
       background-color:black;
       top:10px;
-      margin:${props => props.align ? "0 auto" : ""};;
+      margin:${props => props.align ? "0 auto" : ""};
     }
 
     @media (max-width: 768px) {
         text-align:center;
     }
+    
     @media (max-width: 480px) {
-        text-align:center;
+        text-align:center !important;
         font-size:30px;
+
+        ::after{
+            margin:0 auto;
+        }
     }
     
 `

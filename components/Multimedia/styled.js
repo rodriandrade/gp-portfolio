@@ -19,6 +19,10 @@ const Image = styled.img`
     opacity:1;
     display:block;
     cursor: pointer;
+
+    @media (max-width: 480px) {
+        width:100%;
+    }  
 `
 
 const TextContainer = styled.div`
@@ -44,12 +48,10 @@ const ImageContainer = styled.div`
         opacity: 1;
     }
 
-/*
-    &:hover ${Image} {
-        opacity: 0.1;
+    @media (max-width: 480px) {
+        width:100%;
     }
 
-    */
 `
 
 export {Image, OpenImage, ImageContainer, TextContainer}
