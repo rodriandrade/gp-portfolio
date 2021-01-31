@@ -6,7 +6,8 @@ const Videito = styled.iframe`
     border: none;
 
     @media (max-width: 480px) {
-        width:100%;
+        width:392px;
+        margin-bottom:25px;
     }
 `
 export default Videito

@@ -60,11 +60,11 @@ const ContainerDecoration = styled.div`
 
     @media (max-width: 480px) {
         ::before{
-            width: 200px;
+            width: 170px;
             top:40px;
         }
         ::after{
-            width:200px;
+            width:170px;
             top:40px;
         }
     }

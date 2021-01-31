@@ -3,6 +3,10 @@ import styled from 'styled-components'
 const Image = styled.img`
     width: 550px;
     border: none;
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
 `
 const CloseButton = styled.img`
     cursor: pointer;

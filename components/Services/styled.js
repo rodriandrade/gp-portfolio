@@ -34,6 +34,10 @@ const ContentContainer = styled.div`
     :hover{
         border-bottom: 5px solid #405CB8;
     }
+
+    @media (max-width: 480px) {
+        margin-bottom:40px;
+    }
 `
 
 const Text = styled.p`

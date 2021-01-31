@@ -82,6 +82,7 @@ a{
   }
   .my-masonry-grid_column > div {
     width:100%;
+    margin-bottom: 40px;
   }
 
   // PRODUCCIÓN Y DIRECCIÓN DE STREAMING //
@@ -98,6 +99,7 @@ a{
   }
   .my-masonry-grid-streamings_column > div {
     width:100%;
+    margin-bottom: 40px;
   }
 }
 
