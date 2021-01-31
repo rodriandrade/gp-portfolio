@@ -69,6 +69,7 @@ const Hero = () =>{
                             </ContainerSocial>
                         </ContainerText>
                     </Col>
+                    
                     <Col desktop={5} tablet={6} mobile={12}>
                         <ImageContainer>
                             <ImageAbout src="/foto_hero.jpg"/>
