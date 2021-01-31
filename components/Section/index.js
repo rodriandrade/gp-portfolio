@@ -28,7 +28,7 @@ const Section = props =>{
                     <ContainerDecoration>
                         <Icon src="/microphone-white.svg" alt="microphone_icon" />
                     </ContainerDecoration>
-                    <Text><b>Relatar es una de mis pasiones dentro del periodismo.</b> Cada vez que me toca hacerlo, me preparo de la mejor forma. He trabajado en transmisiones radiales como también, por YouTube.</Text>
+                    <Text><b>Relatar es una de mis pasiones dentro del periodismo.</b> Cada vez que me toca hacerlo, me preparo de la mejor forma. He trabajado en transmisiones radiales como también por YouTube.</Text>
                 </ContainerText>
             </Container>
             
