@@ -11,7 +11,7 @@ const GridContainer = styled.div`
     justify-content: center;
     align-content: center;
     ${(props) => (props.justifyItems  ? "left" : "center")};
-    background-color:red;
+    //background-color:red;
 
     @media (max-width: 768px) {
         width:768px;
@@ -25,7 +25,7 @@ const GridContainer = styled.div`
 `
 
 const ColContainer = styled.div`
-    background-color:yellow;
+    //background-color:yellow;
     grid-column: span ${props => props.desktop || 12};
     
     @media (max-width: 768px) {
