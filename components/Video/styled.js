@@ -6,7 +6,7 @@ const Videito = styled.iframe`
     border: none;
 
     @media (max-width: 480px) {
-        width:392px;
+        width:370px;
         margin-bottom:25px;
     }
 `
