@@ -44,7 +44,7 @@ const Hero = () =>{
         <div>
             <ContainerHero>
                 <Grid colGap={60} rowGap={50} justifyItems="left">
-                    <Col desktop={7} tablet={6} mobile={12}>
+                    <Col desktop={7} tablet={6} mobile={12} order={2}>
                         <ContainerText>
                             <Typical
                                 steps={['Periodista', 1000]}
@@ -69,8 +69,8 @@ const Hero = () =>{
                             </ContainerSocial>
                         </ContainerText>
                     </Col>
-                    
-                    <Col desktop={5} tablet={6} mobile={12}>
+
+                    <Col desktop={5} tablet={6} mobile={12} order={1}>
                         <ImageContainer>
                             <ImageAbout src="/foto_hero.jpg"/>
                         </ImageContainer>

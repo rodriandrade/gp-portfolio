@@ -20,6 +20,7 @@ const Col = ({children, ...props}) => {
             desktop={ props.desktop } 
             tablet={ props.tablet }
             mobile={ props.mobile }
+            order={ props.order }
         >
             {children}
         </ColContainer>

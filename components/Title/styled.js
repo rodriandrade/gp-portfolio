@@ -17,8 +17,8 @@ const TitleText = styled.h1`
   }};
     font-family: 'Poppins', sans-serif; 
     color: rgb(12,12,12);
-    margin:60px 0;
-    text-align:${props => props.align || "left"};;
+    margin:80px 0;
+    text-align:${props => props.align || "left"};
 
     ::after{
       content:'';
@@ -38,6 +38,7 @@ const TitleText = styled.h1`
     @media (max-width: 480px) {
         text-align:center !important;
         font-size:30px;
+        width: 100%;
 
         ::after{
             margin:0 auto;

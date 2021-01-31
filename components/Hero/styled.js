@@ -6,7 +6,7 @@ const ImageAbout = styled.img`
     @media (max-width: 768px) {
     }
     @media (max-width: 480px) {
-        width:300px;
+        width:100%;
         margin:0 auto;
     }
 `
@@ -15,6 +15,7 @@ const ImageContainer = styled.div`
 
     @media (max-width: 480px) {
         margin:0 auto;
+        order:1;
     }
 
 `
@@ -51,6 +52,7 @@ const ContainerText = styled.div`
         width:100%;
         text-align:center;
         justify-content:center;
+        order:2;
     }
 
 `

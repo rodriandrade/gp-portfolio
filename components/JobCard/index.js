@@ -2,18 +2,6 @@ import {Container, IconContainer, Icon, TextContainer, JobText, CompanyText} fro
 
 const JobCard = props =>{
 
-    /*
-    <Container>
-                <IconContainer>
-                    <Icon src={props.icon} />
-                </IconContainer>
-                <TextContainer>
-                    <JobText>{props.job}</JobText>
-                    <CompanyText>{props.company}</CompanyText>
-                </TextContainer>
-            </Container>
-    */
-
     return(
         <div>
             <Container>

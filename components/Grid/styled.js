@@ -33,6 +33,13 @@ const ColContainer = styled.div`
     }
     @media (max-width: 480px) {
         grid-column: span ${props => props.mobile || '12'};
+
+        :nth-child(1) { 
+            order: ${props => props.order || '1'}; 
+        }
+        :nth-child(2) { 
+            order: ${props => props.order || '2'}; 
+        }
     }
 `
 
