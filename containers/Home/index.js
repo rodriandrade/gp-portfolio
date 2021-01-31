@@ -79,7 +79,7 @@ const Home = () =>{
     return(
         <>
             <Inner>
-                <NavMenu />  
+                <NavMenu />
                 <Hero /> 
                 <AboutCard />  
                 <Services /> 

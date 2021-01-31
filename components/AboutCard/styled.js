@@ -5,6 +5,7 @@ const ImageAbout = styled.img`
 
     @media (max-width: 480px) {
         margin:0 auto;
+        width:100%;
     }
 `
 
