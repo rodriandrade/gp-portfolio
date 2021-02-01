@@ -86,7 +86,7 @@ const Home = () =>{
     return(
         <>
             <Inner>
-                
+                <NavMenu /> 
                 <Hero /> 
                 <AboutCard />  
                 <Services /> 
