@@ -62,7 +62,7 @@ const AboutCard = () =>{
                                 <a href="mailto:gabrielpiantanida16@gmail.com">
                                     <JobCard icon="/email.svg" job="Email" company="gabrielpiantanida16@gmail.com"/>
                                 </a>
-                                <a href="https://wa.me/5491141896430">
+                                <a href="mailto:gabrielpiantanida16@gmail.com">
                                 <JobCard icon="/phone.svg" job="Teléfono" company="1141896430"/>
                                 </a>
                             </ContainerJobs>

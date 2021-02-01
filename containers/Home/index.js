@@ -37,6 +37,13 @@ const Home = () =>{
         fetchData()
     }, [])
 
+    const breakpointColumnsStreamings = {
+        default: 3,
+        1100: 3,
+        700: 2,
+        490: 1
+      };
+
     const breakpointColumnsObj = {
         default: 4,
         1100: 3,
@@ -79,7 +86,7 @@ const Home = () =>{
     return(
         <>
             <Inner>
-                <NavMenu />
+                
                 <Hero /> 
                 <AboutCard />  
                 <Services /> 
@@ -89,7 +96,7 @@ const Home = () =>{
                 </Grid>
                 <Title size="h3">Producción y dirección de streamings</Title>
                 <Masonry
-                    breakpointCols={breakpointColumnsObj}
+                    breakpointCols={breakpointColumnsStreamings}
                     className="my-masonry-grid-streamings"
                     columnClassName="my-masonry-grid-streamings_column">
                     {streamings && streamings.map((streaming) => (<Streamings key={streaming.id} data={streaming} />))}

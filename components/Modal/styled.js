@@ -6,7 +6,7 @@ const Image = styled.img`
     border: none;
 
     @media (max-width: 480px) {
-        width: 80%;
+        max-width: 80%;
     }
 `
 const CloseButton = styled.img`
