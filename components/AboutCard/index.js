@@ -42,7 +42,7 @@ const AboutCard = () =>{
     return(
         <div>
             <ContainerHero>
-                <Title size="h1">Sobre mí</Title>
+                <Title size="h1"  id="sobre_mi_section">Sobre mí</Title>
                 <Grid colGap={60} rowGap={50} alignItems="flex-start" justifyItems="left">
                     <Col desktop={4} tablet={6} mobile={12}>
                         <ImageContainer>
@@ -64,7 +64,7 @@ const AboutCard = () =>{
                                 </a>
                                 <JobCard icon="/phone.svg" job="Teléfono" company="1141896430"/>
                             </ContainerJobs>
-                            <a href="/cv-piantanida-1.pdf"><Button>Ver CV</Button></a>
+                            <a href="/cv-piantanida-1.pdf" target="blank"><Button>Ver CV</Button></a>
                         </ContainerText>
                     </Col>
                 </Grid>

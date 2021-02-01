@@ -33,7 +33,7 @@ const NavMenu = () => {
                 <nav>
                     <Menu>
                         <List><a href="#home_section">Home</a></List>
-                        <List><a href="#servicios_section">Sobre mi</a></List>
+                        <List><a href="#sobre_mi_section">Sobre mi</a></List>
                         <List><a href="#relatos_section">Relatos</a></List>
                         <List><a href="#multimedia_section">Contenido Multimedia</a></List>
                     </Menu>
