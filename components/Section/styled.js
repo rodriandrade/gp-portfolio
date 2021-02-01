@@ -76,7 +76,7 @@ const ContainerText = styled.div`
     position: relative;
 
     @media (max-width: 480px) {
-        width:100%;
+        width:90%;
         padding:20px;
     }
 `
