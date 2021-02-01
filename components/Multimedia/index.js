@@ -5,7 +5,7 @@ import React, {useState, useEffect} from 'react'
 
 const Multimedia = props => {
 
-    const {image} = props.data
+    const {image, name} = props.data
     const [modalIsOpen, setModalIsOpen] = useState(false);
 
     const openModal = () =>{
@@ -15,7 +15,7 @@ const Multimedia = props => {
     return(
         <Col desktop={4} tablet={6} mobile={12}>
             <div>
-                <Modal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} image={image} />
+                <Modal modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} image={image} name={name} />
                 <ImageContainer size={props.size}>
                     <Image onClick={openModal} src={image} alt={image} size={props.size}/>
                     <TextContainer onClick={openModal}>

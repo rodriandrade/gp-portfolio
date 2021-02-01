@@ -1,4 +1,4 @@
-import {Image, Container, CloseButton} from './styled'
+import {Image, Container, CloseButton, ImageContainer, ImageText} from './styled'
 import React, {useRef} from 'react'
 import ClientOnlyPortal from '../ClientOnlyPortal'
 
@@ -17,8 +17,11 @@ const Modal = props => {
         {props.modalIsOpen ? 
         <ClientOnlyPortal selector="#modal">
             <Container ref={modalRef} onClick={closeModal}>
-                <CloseButton src="/cancel.svg" onClick={ () => props.setModalIsOpen(!props.modalIsOpen)} />
-                <Image src={props.image} alt={props.image} />
+                <ImageContainer>
+                    <CloseButton src="/cancel.svg" onClick={ () => props.setModalIsOpen(!props.modalIsOpen)} />
+                    <Image src={props.image} alt={props.image} />
+                    <ImageText>{props.name}</ImageText> 
+                </ImageContainer>  
             </Container>
         </ClientOnlyPortal>
         : null}

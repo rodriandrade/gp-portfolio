@@ -7,7 +7,7 @@ const ImageAbout = styled.img`
     }
     @media (max-width: 480px) {
         width:100%;
-        margin:0 auto;
+        margin: 50px auto 0 auto;
     }
 `
 
