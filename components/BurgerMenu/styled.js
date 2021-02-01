@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Burger = styled.button`
+export const StyledBurger = styled.button`
   position: fixed;
   top: 3%;
   right: 2rem;
-  //display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   width: 2rem;
@@ -13,13 +13,11 @@ export const Burger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index:1000000;
-  display:none;
-  
+  z-index: 1000000000000000;
+  position: fixed;
   &:focus {
     outline: none;
   }
-  
   div {
     width: 2rem;
     height: 0.25rem;
@@ -28,20 +26,17 @@ export const Burger = styled.button`
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-  }
-
-  :first-child {
+    :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
-
     :nth-child(2) {
       opacity: ${({ open }) => open ? '0' : '1'};
       transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
     }
-
     :nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
+  }
 
   @media (max-width: 480px) {
       display:flex;

@@ -1,12 +1,12 @@
-import { Burger } from './styled';
+import { StyledBurger } from './styled';
 
 const BurgerMenu = ({ open, setOpen }) => {
   return (
-    <Burger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={open} onClick={() => setOpen(!open)}>
       <div />
       <div />
       <div />
-    </Burger>
+    </StyledBurger>
   )
 }
 
