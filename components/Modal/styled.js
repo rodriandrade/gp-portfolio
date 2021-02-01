@@ -27,6 +27,7 @@ const Container = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+    z-index:100000000000000000000000000000000000000000000000000000000000000000000;
 `
 
 export { Image, Container, CloseButton }
