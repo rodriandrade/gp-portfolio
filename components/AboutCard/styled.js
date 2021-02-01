@@ -14,13 +14,14 @@ const ContainerHero = styled.div`
     flex-direction:column;
     justify-content: center;
     //background-color: rgb(240,240,240);
-    margin:60px 0;
+    margin:60px 0 60px 0;
     align-items: flex-start;
     
     @media (max-width: 480px) {
         width:100%;
         text-align:center;
         align-items: center;
+        margin:0px 0 60px 0;
     }
 `
 

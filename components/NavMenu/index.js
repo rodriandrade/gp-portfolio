@@ -1,7 +1,8 @@
-import {Container, List, Menu, Logo} from './styled'
+import {Container, List, Menu, Logo, CenterContainer} from './styled'
 import BurgerMenu from '../BurgerMenu'
 import React, {useState} from 'react'
 import NavMenuMobile from '../NavMenuMobile'
+import Inner from '../Inner'
 
 const NavMenu = () => {
 
@@ -27,17 +28,19 @@ const NavMenu = () => {
             <BurgerMenu open={open} setOpen={setOpen}/>
             <NavMenuMobile open={open} setOpen={setOpen} />
             <Container>
-                <div>
-                    <Logo src="/logo.svg" alt="gabriel-piantanida-logo"/>
-                </div>
-                <nav>
-                    <Menu>
-                        <List><a href="#home_section">Home</a></List>
-                        <List><a href="#sobre_mi_section">Sobre mi</a></List>
-                        <List><a href="#relatos_section">Relatos</a></List>
-                        <List><a href="#multimedia_section">Contenido Multimedia</a></List>
-                    </Menu>
-                </nav>
+                <CenterContainer>
+                    <div>
+                        <a href="#home_section"><Logo src="/logo.svg" alt="gabriel-piantanida-logo"/></a>
+                    </div>
+                    <nav>
+                        <Menu>
+                            <List><a href="#home_section">Home</a></List>
+                            <List><a href="#sobre_mi_section">Sobre mi</a></List>
+                            <List><a href="#relatos_section">Relatos</a></List>
+                            <List><a href="#multimedia_section">Contenido Multimedia</a></List>
+                        </Menu>
+                    </nav>
+                </CenterContainer>
             </Container>
         </div>
         

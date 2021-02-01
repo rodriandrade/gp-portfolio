@@ -70,6 +70,11 @@ const Menu = styled.ul`
 
 const Logo = styled.img`
     width:250px;
+
+    @media (max-width: 480px) {
+        width:200px;
+
+    }
 `
 
 const ContainerSocial = styled.div`

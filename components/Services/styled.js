@@ -17,7 +17,7 @@ const Container = styled.div`
 `
 
 const ContentContainer = styled.div`
-    background-color: rgb(246,246,246);
+    background-color: rgb(250,250,250);
     width: 370px;
     padding:20px 50px;
     min-height: 320px;
@@ -30,9 +30,11 @@ const ContentContainer = styled.div`
     justify-content:center;
     align-items:center;
     margin-bottom:20px;
+    //box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     :hover{
         border-bottom: 5px solid #405CB8;
+        //background-color: rgb(255,255,255);
     }
 
     @media (max-width: 480px) {

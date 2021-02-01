@@ -8,6 +8,10 @@ const Container = styled.div`
     border-bottom: 1px solid rgb(240, 240, 240);
     padding:10px 0;
     z-index:2;
+    position:fixed;
+    top:0;
+    background-color: #fff;
+    width:100%;
 
     @media (max-width: 480px) {
         width:100%;
@@ -26,7 +30,8 @@ const List = styled.li`
     a{
         padding:0 10px;
         text-decoration: none;
-        color: rgb(12, 12, 12)
+        color: rgb(12, 12, 12);
+        transition:0.3s;
     }
     
     a:hover{
@@ -57,4 +62,20 @@ const Logo = styled.img`
     }
 `
 
-export {Container, List, Menu, Logo}
+const CenterContainer = styled.div`
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+/*
+    @media (max-width: 480px) {
+        margin-left:10%;
+        margin-top:6px;
+    }
+    */
+`
+
+export {Container, List, Menu, Logo, CenterContainer}

@@ -61,7 +61,7 @@ const Hero = () =>{
                                 loop={Infinity}
                                 wrapper={TitleHero}
                             />
-                            <Text>Acá vas a conocerme y encontrar todos mis trabajos hechos hasta el momento. Te invito a que recorras cada sección y espero que te guste!</Text>
+                            <Text>Acá vas a conocerme y encontrar todos mis trabajos hechos hasta el momento. Te invito a que recorras cada sección y espero que te guste.</Text>
                             <ContainerSocial>
                                 <a href="https://www.linkedin.com/in/gabriel-piantanida/" target="blank"><IconSocial src="/linkedin.png" /></a>
                                 <a href="https://twitter.com/piantaok" target="blank"><IconSocial src="/twitter.svg" /></a>
