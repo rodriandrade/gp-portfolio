@@ -37,9 +37,51 @@ const ColContainer = styled.div`
         :nth-child(1) { 
             order: ${props => props.order || '1'}; 
         }
+
         :nth-child(2) { 
             order: ${props => props.order || '2'}; 
         }
+
+        :nth-child(3) { 
+            order: ${props => props.order || '3'}; 
+        }
+        
+        :nth-child(4) { 
+            order: ${props => props.order || '4'}; 
+        }
+
+        :nth-child(5) { 
+            order: ${props => props.order || '5'}; 
+        }
+
+        :nth-child(6) { 
+            order: ${props => props.order || '6'}; 
+        }
+
+        :nth-child(7) { 
+            order: ${props => props.order || '7'}; 
+        }
+
+        :nth-child(8) { 
+            order: ${props => props.order || '8'}; 
+        }
+
+        :nth-child(9) { 
+            order: ${props => props.order || '9'}; 
+        }
+
+        :nth-child(10) { 
+            order: ${props => props.order || '10'}; 
+        }
+
+        :nth-child(11) { 
+            order: ${props => props.order || '11'}; 
+        }
+        
+        :nth-child(12) { 
+            order: ${props => props.order || '12'}; 
+        }
+
     }
 `
 

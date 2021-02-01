@@ -14,7 +14,7 @@ const Container = styled.div`
         flex-direction: column;
         justify-content: center;
         transition: transform 0.3s ease-in-out;
-        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+        transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
         z-index:3;
     }
 `
@@ -47,6 +47,19 @@ const List = styled.li`
 
 `
 
+
+const MenuContainer = styled.div`
+
+    @media (max-width: 480px) {
+        height:70vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    }
+    
+`
+
 const Menu = styled.ul`
 
     @media (max-width: 480px) {
@@ -59,6 +72,20 @@ const Logo = styled.img`
     width:250px;
 `
 
+const ContainerSocial = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:120px;
+
+    @media (max-width: 480px) {
+        margin:15px auto;
+    }
+`
+
+const IconSocial = styled.img`
+    width:26px;
+`
 
 
-export {Container, List, Menu, Logo}
+export {Container, List, Menu, Logo, MenuContainer, ContainerSocial, IconSocial}

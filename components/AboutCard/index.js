@@ -64,7 +64,7 @@ const AboutCard = () =>{
                                 </a>
                                 <JobCard icon="/phone.svg" job="Teléfono" company="1141896430"/>
                             </ContainerJobs>
-                            <a href="/cv-piantanida-1.pdf"><Button>Descargar CV</Button></a>
+                            <a href="/cv-piantanida-1.pdf"><Button>Ver CV</Button></a>
                         </ContainerText>
                     </Col>
                 </Grid>
