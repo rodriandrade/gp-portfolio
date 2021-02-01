@@ -5,6 +5,7 @@ import {Container, ContentContainer, Icon, TitleService, Text} from './styled'
 const Services = props =>{
     return(
         <div>
+            <section>
             <Title size="h1">Aptitudes</Title>
             <Grid colGap={40} rowGap={20}>
                 <Col desktop={4} tablet={6} mobile={12}>
@@ -50,6 +51,7 @@ const Services = props =>{
                     </ContentContainer>
                 </Col>
             </Grid>
+            </section>
         </div>
     )
 }

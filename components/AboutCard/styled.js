@@ -9,7 +9,7 @@ const ImageAbout = styled.img`
     }
 `
 
-const ContainerHero = styled.div`
+const ContainerHero = styled.section`
     display:flex;
     flex-direction:column;
     justify-content: center;

@@ -20,7 +20,7 @@ const ImageContainer = styled.div`
 
 `
 
-const ContainerHero = styled.div`
+const ContainerHero = styled.section`
     display:flex;
     flex-direction:column;
     align-items: center;

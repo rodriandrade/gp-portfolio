@@ -25,23 +25,25 @@ const NavMenu = () => {
 
     return(
         <div>
-            <BurgerMenu open={open} setOpen={setOpen}/>
-            <NavMenuMobile open={open} setOpen={setOpen} />
-            <Container>
-                <CenterContainer>
-                    <div>
-                        <a href="#home_section"><Logo src="/logo.svg" alt="gabriel-piantanida-logo"/></a>
-                    </div>
-                    <nav>
-                        <Menu>
-                            <List><a href="#home_section">Home</a></List>
-                            <List><a href="#sobre_mi_section">Sobre mi</a></List>
-                            <List><a href="#relatos_section">Relatos</a></List>
-                            <List><a href="#multimedia_section">Contenido Multimedia</a></List>
-                        </Menu>
-                    </nav>
-                </CenterContainer>
-            </Container>
+            <header>
+                <BurgerMenu open={open} setOpen={setOpen}/>
+                <NavMenuMobile open={open} setOpen={setOpen} />
+                <Container>
+                    <CenterContainer>
+                        <div>
+                            <a href="#home_section"><Logo src="/logo.svg" alt="gabriel-piantanida-logo"/></a>
+                        </div>
+                        <nav>
+                            <Menu>
+                                <List><a href="#home_section">Home</a></List>
+                                <List><a href="#sobre_mi_section">Sobre mi</a></List>
+                                <List><a href="#relatos_section">Relatos</a></List>
+                                <List><a href="#multimedia_section">Contenido Multimedia</a></List>
+                            </Menu>
+                        </nav>
+                    </CenterContainer>
+                </Container>
+            </header>
         </div>
         
     )
