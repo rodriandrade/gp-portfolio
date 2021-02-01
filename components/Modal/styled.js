@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
 const ImageContainer = styled.div`
-    background-color: rgba(10,10,10,0.9);
+    //background-color: rgba(10,10,10,0.9);
     max-width:500px;
     border-radius:5px;
 
     @media (max-width: 480px) {
         max-width:80%;
+        display:flex;
+        flex-direction:column;
     }
 `
 
@@ -37,10 +39,19 @@ const CloseButton = styled.img`
     position: absolute;
     top:30px;
     right:80px;
+
+    @media (max-width: 480px) {
+        top:0;
+        right:20px;
+        position:relative;
+        padding:20px 0px;
+        align-self:flex-end;
+        width:20px;
+    }
 `
 const Container = styled.div`
     position:fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     top: 0;
     right: 0;
     bottom: 0;
