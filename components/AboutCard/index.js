@@ -51,7 +51,7 @@ const AboutCard = () =>{
                     </Col>
                     <Col desktop={7} tablet={6} mobile={12}>
                         <ContainerText>
-                            <Text><b>Hace más de 4 años que estoy trabajando en los medios de comunicación.</b> Me encanta el periodismo en todas sus facetas. Recorrí varios estadios y centros de entrenamiento del fútbol argentino; haciendo coberturas de entrenamientos y partidos. También realicé entrevistas a protagonistas del ambiente deportivo. Las redes sociales son otro de los aspectos que me interesan y ejercí como Community Manager de “Atado a Tu Locura” durante 2 años.</Text>
+                            <Text><b>Hace más de 4 años que estoy trabajando en los medios de comunicación.</b> Me encanta el periodismo en todas sus facetas. Recorrí varios estadios y centros de entrenamiento del fútbol argentino haciendo coberturas de entrenamientos y partidos. También realicé entrevistas a protagonistas del ambiente deportivo. Las redes sociales son otro de los aspectos que me interesan. Ejercí como Community Manager de “Atado a Tu Locura” durante 2 años.</Text>
                             <SubtitleAbout>Actualmente trabajando como:</SubtitleAbout>
                             <ContainerJobs>
                                 <JobCard icon="/microphone.svg" job="Relator" company="Frecuencia Futbol (Am 1420)"/>
