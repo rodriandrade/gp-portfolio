@@ -6,12 +6,17 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(240, 240, 240);
+    padding:10px 0;
     z-index:2;
 
     @media (max-width: 480px) {
-        width:90%;
-        //background-color: rgb(220,220,220,1);
+        width:100%;
+        background-color: #fff;
         margin:0 auto;
+        //position:fixed;
+        position: ${({ open }) => open ? 'flex' : 'fixed'};
+        top:0;
+        padding:20px 0;
     }
 `
 
@@ -31,12 +36,6 @@ const List = styled.li`
 
     @media (max-width: 480px) {
         display:none;
-        /*
-        display:block;
-        text-align:center;
-        margin:20px 0;
-        font-size:24px;
-        */
     }
 
 `
@@ -49,7 +48,13 @@ const Menu = styled.ul`
     */
 `
 
-const MenuMobile = styled.ul`
+const Logo = styled.img`
+    width:250px;
+
+    @media (max-width: 480px) {
+        margin-left:10%;
+        margin-top:6px;
+    }
 `
 
-export {Container, List, Menu, MenuMobile}
+export {Container, List, Menu, Logo}

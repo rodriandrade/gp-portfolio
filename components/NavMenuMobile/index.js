@@ -1,21 +1,21 @@
-import {Container, List, Menu} from './styled'
+import {Container, List, Menu, Logo} from './styled'
 import BurgerMenu from '../BurgerMenu'
 import React, {useState} from 'react'
 
-const NavMenuMobile = ({open}) => {
+const NavMenuMobile = ({open, setOpen}) => {
 
     return(
         <div>
             <Container open={open}>
                 <div>
-                    <h2>Gabriel Piantanida</h2>
+                    <Logo src="/logo.svg" alt="gabriel-piantanida-logo"/>
                 </div>
                 <nav>
                     <Menu>
-                        <List><a href="">Home</a></List>
-                        <List><a href="#servicios_section">Sobre mi</a></List>
-                        <List><a href="#relatos_section">Relatos</a></List>
-                        <List><a href="#multimedia_section">Contenido Multimedia</a></List>
+                        <List onClick={() => setOpen(!open)}><a href="#home_section">Home</a></List>
+                        <List onClick={() => setOpen(!open)}><a href="#servicios_section">Sobre mi</a></List>
+                        <List onClick={() => setOpen(!open)}><a href="#relatos_section">Relatos</a></List>
+                        <List onClick={() => setOpen(!open)}><a href="#multimedia_section">Contenido Multimedia</a></List>
                     </Menu>
                 </nav>
             </Container>

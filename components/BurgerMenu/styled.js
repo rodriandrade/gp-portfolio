@@ -13,8 +13,7 @@ export const Burger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
-  display: none;
+  z-index:1000000;
   
   &:focus {
     outline: none;
@@ -30,7 +29,21 @@ export const Burger = styled.button`
     transform-origin: 1px;
   }
 
+  :first-child {
+      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+    }
+
+    :nth-child(2) {
+      opacity: ${({ open }) => open ? '0' : '1'};
+      transform: ${({ open }) => open ? 'translateX(20px)' : 'translateX(0)'};
+    }
+
+    :nth-child(3) {
+      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+    }
+
   @media (max-width: 480px) {
       display:flex;
+      z-index:10;
   }
 `;

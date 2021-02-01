@@ -42,7 +42,7 @@ const Hero = () =>{
     */
     return(
         <div>
-            <ContainerHero>
+            <ContainerHero id="home_section">
                 <Grid colGap={60} rowGap={50} justifyItems="left">
                     <Col desktop={7} tablet={6} mobile={12} order={2}>
                         <ContainerText>
