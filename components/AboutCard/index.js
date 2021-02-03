@@ -55,7 +55,7 @@ const AboutCard = () =>{
                             <SubtitleAbout>Actualmente trabajando como:</SubtitleAbout>
                             <ContainerJobs>
                                 <JobCard icon="/microphone.svg" job="Relator" company="Frecuencia Futbol (Am 1420)"/>
-                                <JobCard icon="/youtube.svg" job="Creador de contenido" company="El Show del Rojo (YouTube)"/>
+                                <JobCard icon="/youtube.svg" job="Creador de contenido" company="Secta Deportiva (YouTube)"/>
                             </ContainerJobs>
                             <SubtitleAbout>Podés contactarme en:</SubtitleAbout>
                             <ContainerJobs>
