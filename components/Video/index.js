@@ -1,5 +1,5 @@
 import {Grid, Col} from '../Grid'
-import {VideoYouTube, VideoLocal} from './styled'
+import {VideoYouTube, VideoLocal, Container} from './styled'
 
 const Video = props => {
 
@@ -12,7 +12,9 @@ const Video = props => {
                 {video.includes("https") ? 
                     <VideoYouTube src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></VideoYouTube>
                     : 
-                    <VideoLocal controls><source src="/gol_de_jorginho.mp4" type="video/mp4" /></VideoLocal>
+                    
+                        <VideoLocal controls><source src="/gol_de_jorginho.mp4" type="video/mp4" /></VideoLocal>
+                    
                 }
             </div>
         </Col>
