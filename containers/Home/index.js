@@ -25,9 +25,9 @@ const Home = () =>{
     useEffect(() => {
         const fetchData = async () => {
               try {
-                  const responseVideos = await axios.get(`https://cors-anywhere.herokuapp.com/https://gp-website-api-git-main.rodriandrade.vercel.app/videos`)
-                  const responseImages = await axios.get(`https://cors-anywhere.herokuapp.com/https://gp-website-api-git-main.rodriandrade.vercel.app/imagenes`)
-                  const responseStreamings = await axios.get(`https://cors-anywhere.herokuapp.com/https://gp-website-api-git-main.rodriandrade.vercel.app/streamings`)
+                  const responseVideos = await axios.get(`https://gp-website-api-git-main-rodriandrade.vercel.app/videos`)
+                  const responseImages = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/imagenes`)
+                  const responseStreamings = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/streamings`)
                   setVideos(responseVideos.data);
                   setImages(responseImages.data);
                   setStreamings(responseStreamings.data)
