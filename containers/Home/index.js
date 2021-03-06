@@ -25,7 +25,7 @@ const Home = () =>{
     useEffect(() => {
         const fetchData = async () => {
               try {
-                  const responseVideos = await axios.get(`hhttps://gp-portfolio-api.vercel.app/videos`)
+                  const responseVideos = await axios.get(`https://gp-portfolio-api.vercel.app/videos`)
                   const responseImages = await axios.get(`https://gp-portfolio-api.vercel.app/imagenes`)
                   const responseStreamings = await axios.get(`https://gp-portfolio-api.vercel.app/streamings`)
                   setVideos(responseVideos.data);
