@@ -25,14 +25,12 @@ const Home = () =>{
     useEffect(() => {
         const fetchData = async () => {
               try {
-                  const responseVideos = await axios.get(`https://gp-website-api-git-main-rodriandrade.vercel.app/videos`)
-                  const responseArtists = await axios.get(`https://artists-api.vercel.app/artists`)
-                  const responseImages = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/imagenes`)
-                  const responseStreamings = await axios.get(`https://gp-website-api-git-main.rodriandrade.vercel.app/streamings`)
-                  console.log(responseArtists)
+                  const responseVideos = await axios.get(`hhttps://gp-portfolio-api.vercel.app/videos`)
+                  const responseImages = await axios.get(`https://gp-portfolio-api.vercel.app/imagenes`)
+                  const responseStreamings = await axios.get(`https://gp-portfolio-api.vercel.app/streamings`)
                   setVideos(responseVideos.data);
                   setImages(responseImages.data);
-                setStreamings(responseStreamings.data)
+                    setStreamings(responseStreamings.data)
               } catch (error) {
                   console.error('este es mi error',error);
               }
