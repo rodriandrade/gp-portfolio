@@ -11,7 +11,7 @@ const Video = props => {
                 {video.includes("https") ? 
                     <VideoYouTube src={video} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></VideoYouTube>
                     : 
-                    <VideoLocal controls><source src="/gol_de_independiente.mp4" type="video/mp4" /></VideoLocal>
+                    <VideoLocal controls><source src={video} type="video/mp4" /></VideoLocal>
                 }
             </div>
         </Col>
