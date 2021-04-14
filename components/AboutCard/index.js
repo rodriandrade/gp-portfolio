@@ -56,8 +56,11 @@ const AboutCard = () =>{
                             <ContainerJobs>
                                 <JobCard icon="/microphone.svg" job="Relator" company="Frecuencia Futbol (Am 1420)"/>
                                 <JobCard icon="/youtube.svg" job="Creador de contenido" company="Secta Deportiva (YouTube)"/>
+                                <a href="https://www.infiernorojo.com/independiente/author/gabriel-piantanida/" target="blank">
+                                    <JobCard icon="/writer.svg" job="Redactor" company="Infierno Rojo"/>
+                                </a>
                             </ContainerJobs>
-                            <SubtitleAbout>Podés contactarme en:</SubtitleAbout>
+                            <SubtitleAbout>Podés contactarme por:</SubtitleAbout>
                             <ContainerJobs>
                                 <a href="mailto:gabrielpiantanida16@gmail.com">
                                     <JobCard icon="/email.svg" job="Email" company="gabrielpiantanida16@gmail.com"/>

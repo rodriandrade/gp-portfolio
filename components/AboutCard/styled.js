@@ -30,7 +30,7 @@ const ContainerText = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width:650px;
+    width:100%;
     margin-left:30px;
 
     @media (max-width: 480px) {
@@ -58,9 +58,21 @@ const ImageContainer = styled.div`
 const ContainerJobs = styled.div`
     display: flex;
     flex-direction: row;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
 
     div:nth-child(2), a:nth-child(2) {
         margin-left:20px;
+    }
+
+    div:nth-child(3), a:nth-child(3) {
+        margin-top:20px;
+    }
+
+    a{
+        cursor:pointer;
     }
 
     @media (max-width: 480px) {
@@ -70,6 +82,10 @@ const ContainerJobs = styled.div`
         div:nth-child(2), a:nth-child(2) {
             margin-left:0px;
         }
+
+        div:nth-child(3), a:nth-child(3) {
+        margin-top:0px;
+    }
     }
 `
 
@@ -94,6 +110,7 @@ const SubtitleAbout = styled.h2`
     font-size: 16px;
     color: rgb(50,50,50);
     margin-bottom:10px;
+    margin-top:20px;
 
     @media (max-width: 480px) {
        text-align:center !important;
